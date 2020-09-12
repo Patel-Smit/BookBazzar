@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./style/login.css">
+    <title>Register | BookBazaar</title>
+</head>
+
+<body>
+    <div class="inpcontainer">
+        <p class="title">Register 📓</p>
+        <form class="formcontainer" onsubmit="registerr()" action="./login.html">
+            <input type="text" class="inp-text" placeholder="name" required />
+            <input type="email" class="inp-text" placeholder="email" required />
+            <div class="multcontainer">
+                <input type="number" class="dob" placeholder="DD" min="1" max="31" required />
+                <input type="number" class="dob" placeholder="MM" required />
+                <input type="number" class="dob" placeholder="YYYY" min="1925" max="2021" required />
+            </div>
+            <input type="text" class="inp-text" placeholder="username" required />
+            <div class="multcontainer">
+                <input type="password" class="p-text" placeholder="password" required />
+                <input type="password" class="p-text" placeholder="confirm password" required />
+            </div>
+            <div class="termscontainer">
+                <input type="checkbox" required /> I accept the <a href="./Terms&Conditions.html" target="#"
+                    class="col">Terms & Conditions</a>
+            </div>
+            <div class="termscontainer">
+                <!-- <input type="button" onclick="registerr()" class="subbtn" value="Register" /> -->
+
+                
+
+                 <button class="subbtn" > Register</button> 
+            </div>
+            <div class="termscontainer">
+                Already a member? <a href="./login.html" class="col">Login</a>
+            </div>
+        </form>
+    </div>
+    <script src="./scripts/scripts.js"></script>
+</body>
+
+</html>

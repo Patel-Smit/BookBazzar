@@ -1,0 +1,418 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+  }
+  
+  body {
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    background: #3d3d3d;
+  }
+  
+  .header {
+    font-size: 60px;
+    text-align: center;
+    padding: 12px 0;
+    color: white;
+    background-color: #2e2e2e;
+    position: relative;
+  }
+  .logo {
+    position: absolute;
+    top: 24px;
+    width: 48px;
+    height: 48px;
+    left: 32px;
+}
+  .time {
+    position: absolute;
+    right: 32px;
+    top:40px;
+    font-size: 16px;
+  }
+  
+  main {
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    height: calc(100vh - 96px);
+  }
+  
+  .leftcontainer {
+    background-color: #595959;
+  }
+  .sidebar {
+    list-style: none;
+  }
+  .sidebar li a{
+    text-decoration: none;
+    display: inline-block;
+    padding: 16px;
+    color: white;
+  }
+  .active{ 
+    color: #E84C3D !important;
+    font-weight: 600;
+  }
+  
+  .rightcontainer {
+    background-color: #3d3d3d;
+    padding: 40px;
+  }
+  .bookscontainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 32px;
+  }
+  .book{
+    /* background-color: #E84C3D; */
+    text-decoration: none;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    color: #ebebeb;
+    text-align: center;
+  }
+  .book .bookcover {
+    height: 300px;
+    margin-bottom: 20px;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .bookcontainer{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  .bookcontainer .bookcover{
+    height: 500px;
+    width:300px;
+    overflow: hidden;
+    margin-right: 32px;
+    position: relative;
+  }
+  .bookcontainer .bookcover img{
+    width: 100%;
+    height:100%;
+  }
+  .ribbon {
+    margin: 0;
+    padding: 0;
+    background: #E84C3D;
+    color:white;
+    padding:1em 0;
+    position: absolute;
+    top:0;
+    right:0;
+    transform: translateX(30%) translateY(0%) rotate(45deg);
+    transform-origin: top left;
+  }
+  .ribbon:before,
+  .ribbon:after {
+    content: '';
+    position: absolute;
+    top:0;
+    margin: 0 -1px; /* tweak */
+    width: 100%;
+    height: 100%;
+    background: #E84C3D;
+  }
+  .ribbon:before {
+    right:100%;
+  }
+  
+  .ribbon:after {
+    left:100%;
+  }
+  .bookdescription {
+    max-width: 450px;
+  }
+  .bookdescription .title {
+    font-size: 32px;
+    color: white;
+    font-weight: 600;
+    line-height: 1.2;
+    font-family: 'Jost', sans-serif;
+  }
+  .line {
+    color: rgba(232, 76, 61, 0.5);
+  }
+  .bookdescription .author {
+    margin: 12px 0;
+    color: rgba(255,255,255,0.7);
+    text-align: right;
+  }
+  .bookdescription .description {
+    margin: 12px 0;
+    color: whitesmoke;
+    letter-spacing: 1px;
+    text-align: justify;
+  }
+  .bookdescription .reviews {
+    margin-top: 12px;
+    color: white;
+  }
+  .bookdescription .reviews .link {
+    color : #E84C3D;
+  }
+  .bookdescription .link {
+    color : #E84C3D;
+  }
+  .bookdescription .info {
+    margin: 12px 0;
+    color: whitesmoke;
+    font-weight: 600;
+  }
+  .bookdescription .info .light {
+    font-weight: normal;
+  }
+  .bookdescription .stars .fa {
+    font-size: 32px;
+    margin-right: 4px;
+    transition: 0.25s;
+    color: #E84C3D;
+    cursor: pointer;
+  }
+  .bookdescription .stars .fa:hover {
+    transform: rotate(72deg);
+  }
+  .bookdescription .buynow {
+    margin: 12px 0;
+    width: 150px;
+    text-align: center;
+  }
+  .bookdescription .buynow a {
+    padding: 8px;
+    border-radius: 12px;
+    border:0;
+    display: inline-block;
+    text-decoration: none;
+    color: #000;
+    width: 100%;
+    cursor: pointer;
+    font-weight: 600;
+    background: whitesmoke;
+    transition: 0.15s;
+  }
+  .bookdescription .buynow a:hover{
+    background-color: #E84C3D;
+    color: whitesmoke;
+  }
+  .userreviews{
+    max-width: 782px;
+    margin: auto;
+  }
+  .userreviews .reviewtitle{
+    color: #E84C3D;
+    font-size: 24px;
+    font-weight: normal;
+    margin-top: 32px ;
+  }
+  .userreviews .userreview .user {
+    color: #E84C3D;
+    font-weight: 600;
+    padding:12px 0;
+  }
+  .userreviews .userreview {
+    margin: 14px 0;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+    color: whitesmoke;
+    cursor: pointer;
+  }
+  .userreviews .writereviewname {
+
+    margin-top: 12px;
+    width: 50%;
+    padding:8px;
+    border-radius: 8px;
+    border: 0;
+    font-size: 18px;
+    color: whitesmoke;
+    caret-color: #E84C3D;
+    background: #2e2e2e;
+  }
+  .userreviews .writereviewname::placeholder{
+    color: #ebebeb;
+  }
+  .userreviews .writereviewname:focus{
+    box-shadow: 0 0 10px rgba(232, 76, 61, 0.5);
+  }
+  .userreviews .writereview {
+    margin-top: 12px;
+    width: 50%;
+    height:100px;
+    border-radius: 8px;
+    resize: none;
+    border:0;
+    padding: 8px;
+    background: #2e2e2e;
+    caret-color: #E84C3D;
+    color: whitesmoke;
+    font-size: 18px;
+  }
+  .userreviews .writereview::placeholder{
+    color: #ebebeb;
+  }
+  .userreviews .writereview:focus{
+    box-shadow: 0 0 10px rgba(232, 76, 61, 0.5);
+  }
+  .userreviews .submitreview{
+    padding:12px 20px;
+    margin-top: 12px;
+    border: 0;
+    border-radius: 8px;
+    background: whitesmoke;
+    transition: 0.2s;
+  }
+  .userreviews .submitreview:hover{
+    background: #E84C3D;
+    color:whitesmoke;
+  }
+
+
+  /* .comic{
+    overflow: hidden;
+    /* background: linear-gradient(rgba(232, 76, 61, 1), rgba(232, 76, 61, 1), url("../comic.jpg")); */
+  /* } */
+   /* .comic .img{
+    top:0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+  }
+  .comic:hover{
+    left: 0;
+  }  */ 
+  
+  
+  @media screen and (max-width: 1000px) {
+    main{
+      grid-template-columns: 1fr;
+      height: auto;
+    }
+    .sidebar{
+      text-align: center;
+    }
+    .sidebar li {
+      display: inline-block
+    }
+    .bookscontainer{
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  @media screen and (max-width: 800px) {
+    .bookcontainer{
+      align-items: center;
+      flex-direction: column;
+    }
+    .bookdescription{
+      margin-top: 24px;
+    }
+    .userreviews .writereviewname {
+      width : 100%;
+    }
+    .userreviews .writereview {
+      width: 100%;
+    }
+  }

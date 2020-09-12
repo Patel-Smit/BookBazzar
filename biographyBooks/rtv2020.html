@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Jost&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="../style/books.css">
+    <title>Realizing Vision | BookBazaar</title>
+</head>
+
+<body onload="startTime()">
+    <p class="header">
+        <a href="../home.html"><img class="logo" src="../assets/images/book_icon.png" /></a>
+        BookBazaar
+        <span class="time" id="time"></span>
+    </p>
+    <main>
+        <div class="leftcontainer">
+            <ul class="sidebar">
+                <li><a href="../home.html" class="active">Home</a></li>
+                <li><a href="../aboutus.html">About Us</a></li>
+                <li><a href="../biographyBooks/transcendence.html">Book of the Month</a></li>
+                <li><a href="../Terms&Conditions.html">Terms & Conditions</a></li>
+                <li><a href="#" onclick="alert('You have been logged out.'); window.open(' ../login.html', '_self')">Sign
+                        Out</a>
+                </li>
+            </ul>
+        </div>
+        <div class="rightcontainer">
+            <div class="bookcontainer">
+                <img src="../assets/images/rtv2020S.jpg" class="bookcover" />
+                <div class="bookdescription">
+                    <p class="title">Realizing Vision 2020: (Penguin Petit)</p>
+                    <p class="author">- A. P. J. Abdul Kalam and Yagnaswami Sundara Rajan</p>
+                    <p class="description">
+                        The progress of a nation that has over a billion people depends on how its people think. But for
+                        change to happen, action upon those thoughts is necessary. And somehow, over the years, India
+                        has developed the habit of giving less priority to actual action. Fortunately, a large part of
+                        our population is young and raring to go. more>>
+                    </p>
+                    <hr class="line" />
+                    <p class="reviews">4.4/5 - <span class="link">GoogleReads</span></p>
+                    <p class="info">Originally Published: <span class="light">June 2015</span></p>
+                    <p class="info">Authors: <span class="light">Arun Tiwari, A.P.J. Abdul Kalam</span></p>
+                    <p class="info">Genre: <span class="light">Biography</span></p>
+                    <div class="stars">
+                        <div class="fa fa-star"></div>
+                        <div class="fa fa-star"></div>
+                        <div class="fa fa-star"></div>
+                        <div class="fa fa-star"></div>
+                        <div class="fa fa-star-o"></div>
+                    </div>
+                    <p class="buynow">
+                        <a href="../pay.html">Buy Now</a>
+                    </p>
+                </div>
+            </div>
+            <div class="userreviews">
+                <h2 class="reviewtitle">User Reviews <i class="fa fa-star"></i></h2>
+                <table id="tablereviews">
+                    <tr class="userreview">
+                        <td width="20%" class="user">Patel Nishit</td>
+                        <td> Excellent!!! Brilliant !! Unbelievable!!! Must must
+                            read.....</td>
+                    </tr>
+                    <tr class="userreview">
+                        <td class="user">Modi Prince</td>
+                        <td>Unbelievable</td>
+                    </tr>
+                    <tr class="userreview">
+                        <td class="user">Parekh Dhrumil</td>
+                        <td> This book is awesome. It shows how science and
+                            spirituality is interconnected. It teaches us to keep unity between religions rather than
+                            fighting
+                            with each other.</td>
+                    </tr>
+                </table>
+                <h2 class="reviewtitle">Your review</h2>
+                <input type="text" class="writereviewname" id="name" placeholder="Your name" />
+                <textarea class="writereview" id="review" placeholder="Your review here" ></textarea>
+                <br /><button class="submitreview" onclick="submitreview()">Submit</button>
+            </div>
+        </div>
+    </main>
+    <script src="../scripts/scripts.js"></script>
+    
+</body>
+
+</html>

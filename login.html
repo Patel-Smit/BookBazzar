@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./style/login.css">
+    <title>Login | BookBazaar</title>
+</head>
+
+<body>
+    <div class="inpcontainer">
+        <p class="title">Login 📲</p>
+        <form onsubmit="return validate()">
+        <div class="formcontainer">
+            <input type="text" class="inp-text" id="username" placeholder="username" required />
+            <input type="password" class="inp-text" id="password" placeholder="password" required />
+            <div class="termscontainer">
+                <button type="submit" class="subbtn" >Login</button>
+            </div>
+            <div class="termscontainer">
+                Not a member? <a href="./register.html" class="col">Register</a>
+            </div>
+        </div>
+        </form>
+    </div>
+    <script src="./scripts/scripts.js"></script>
+</body>
+
+</html>

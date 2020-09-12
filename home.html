@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./style/main.css">
+    <title>BookBazaar</title>
+</head>
+
+<body onload="startTime()">
+    <p class="header">
+        <a href="home.html"><img class="logo" src="./assets/images/book_icon.png" /></a>
+        BookBazaar
+        <span class="time" id="time"></span>
+    </p>
+    <main>
+        <div class="leftcontainer">
+            <ul class="sidebar">
+                <li><a href="" class="active">Home</a></li>
+                <li><a href="./aboutus.html">About Us</a></li>
+                <li><a href="./biographyBooks/transcendence.html">Book of the Month</a></li>
+                <li><a href="./Terms&Conditions.html">Terms & Conditions</a></li>
+                <li><a href="#" onclick="alert('You have been logged out.'); window.open(' ./login.html', '_self')">Sign
+                        Out</a>
+                </li>
+            </ul>
+        </div>
+        <div class="rightcontainer">
+            <div class="categorycontainer">
+                <a href="./biography.html" class="category">
+                    <span class="overlay">BIOGRAPHY</span>
+                    <img src="./assets/images/biography.jpg" class=" img" />
+                </a>
+                <a href="./education.html" class="category">
+                    <span class="overlay">EDUCATION</span>
+                    <img src="./assets/images/education.jpg" class=" img" alt="">
+                </a>
+                <a href="#" onclick="alert('❗ Category unavailable.')" class="category">
+                    <span class="overlay">NOVELS</span>
+                </a>
+                <a href="#" onclick="alert('❗ Category unavailable.')" class="category">
+                    <span class="overlay">DRAMA</span>
+                </a>
+                <a href="#" onclick="alert('❗ Category unavailable.')" class="category">
+                    <span class="overlay">HORROR</span>
+                </a>
+                <a href="#" onclick="alert('❗ Category unavailable.')" class="category">
+                    <span class="overlay">CLASSIC</span>
+                </a>
+            </div>
+        </div>
+    </main>
+    <footer>
+        Copyright &copy; 2020 BookBazaar.com All rights reserved.
+    </footer>
+    <script src="./scripts/scripts.js"></script>
+</body>
+
+</html>

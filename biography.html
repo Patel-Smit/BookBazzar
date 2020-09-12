@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./style/books.css">
+    <title>BookBazaar</title>
+</head>
+
+<body onload="startTime()">
+    <p class="header">
+        <a href="home.html"><img class="logo" src="./assets/images/book_icon.png" /></a>
+        BookBazaar
+        <span class="time" id="time"></span>
+    </p>
+    <main>
+        <div class="leftcontainer">
+            <ul class="sidebar">
+                <li><a href="./home.html" class="active">Home</a></li>
+                <li><a href="./aboutus.html">About Us</a></li>
+                <li><a href="./biographyBooks/transcendence.html">Book of the Month</a></li>
+                <li><a href="./Terms&Conditions.html">Terms & Conditions</a></li>
+                <li><a href="#" onclick="alert('You have been logged out.'); window.open(' ./login.html', '_self')">Sign
+                        Out</a>
+                </li>
+            </ul>
+        </div>
+        <div class="rightcontainer">
+            <div class="bookscontainer">
+                <a href="./biographyBooks/transcendence.html" class="book">
+                    <img src="./assets/images/transcendenceS.jpg" class="bookcover" />
+                    Transcendence: My Spiritual Experiences with Pramukh Swamiji</a>
+                <div class="book"><a href="./biographyBooks/rtv2020.html" class="book"><img
+                            src="./assets/images/rtv2020S.jpg" class="bookcover" />
+                        Realizing Vision 2020: (Penguin Petit) :The progress of a nation</div></a>
+                <div class="book"><a href="./biographyBooks/SteveJobs.html" class="book"><img
+                            src="./assets/images/SteveJobsS.jpg" class="bookcover" />
+                        Steve Jobs: Goodreads Choice Awards Best History & Biography</div></a>
+
+            </div>
+        </div>
+    </main>
+    <script src="./scripts/scripts.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./style/pay.css">
+    <title>Pay | BookBazaar</title>
+</head>
+
+<body onload="startTime()">
+    <p class="header">
+        <a href="home.html"><img class="logo" src="./assets/images/book_icon.png" /></a>
+        BookBazaar
+        <span class="time" id="time"></span>
+    </p>
+    <main>
+        <p class="title">Payy <span class="powered">- Powered by Money</span></p>
+        <!-- <p class="payinfo" style="margin-top: 16px;">Transendence = $14.69</p> -->
+        <form onsubmit="alert('Payment Done!\nPlease check your mail. 📧')">
+        <span class="payinfo"> Card Number </span></span><input type="number" maxlength="16" class="cardnumber"
+            placeholder="XXXX-XXXX-XXXX-XXXX" required />
+        <br />
+        <span class="payinfo">Month of Expiry</span>
+        <select placeholder="abc" class="month">
+            <option selected>&nbsp;</option>
+            <option>01/Jan</option>
+            <option>02/Feb</option>
+            <option>03/Mar</option>
+            <option>04/Apr</option>
+            <option>05/May</option>
+            <option>06/June</option>
+            <option>07/July</option>
+            <option>08/Aug</option>
+            <option>09/Sept</option>
+            <option>10/Oct</option>
+            <option>11/Nov</option>
+            <option>12/Dec</option>
+        </select> &nbsp;&nbsp; &nbsp;
+        <span class="payinfo">Year of Expiry</span>
+        <select placeholder="abc" class="year">
+            <option selected>&nbsp;</option>
+            <option>2020</option>
+            <option>2021</option>
+            <option>2022</option>
+            <option>2023</option>
+            <option>2024</option>
+            <option>2025</option>
+            <option>2026</option>
+        </select>
+        <br />
+        <span class="payinfo">CVV</span>
+        <input type="password" maxlength="3" class="cvv" placeholder="XXX" required />
+        <br /><button type="submit" class="paynow">🔒 Pay $14.69</button>
+    </form>
+    </main>
+    <script src="./scripts/scripts.js"></script>
+
+</body>
+
+</html>

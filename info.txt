@@ -1,0 +1,31 @@
+Created by: - Smitkumar Patel (1893467) 
+              Mihirkumar Patel (1892917)
+
+Hosted at: - http://bookbazzar.gearhostpreview.com
+
+Naming: - We chooze bookbazzar/bookbazaar as name because "bazzar" in Hindi language stands for "Market".
+
+Submitted to:- Professor Lucas Brancatella (PROGRAMMING IN A GRAPHICAL ENVIRONMENT)
+
+References: -
+
+    w3schools
+        https://www.w3schools.com
+
+    StackOverflow
+        https://stackoverflow.com
+
+    SoloLearn
+        https://www.sololearn.com
+
+    GearHost
+        https://www.gearhost.com
+
+    FreeCodeCamp
+        https://www.freecodecamp.org
+
+    GeekforGeeks
+        https://www.geeksforgeeks.org
+
+    Youtube
+        To understand some stuff.

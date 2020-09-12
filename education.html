@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./style/books.css">
+    <title>BookBazaar</title>
+</head>
+
+<body onload="startTime()">
+    <p class="header">
+        <a href="home.html"><img class="logo" src="./assets/images/book_icon.png" /></a>
+        BookBazaar
+        <span class="time" id="time"></span>
+    </p>
+    <main>
+        <div class="leftcontainer">
+            <ul class="sidebar">
+                <li><a href="./home.html" class="active">Home</a></li>
+                <li><a href="./aboutus.html">About Us</a></li>
+                <li><a href="./biographyBooks/transcendence.html">Book of the Month</a></li>
+                <li><a href="./Terms&Conditions.html">Terms & Conditions</a></li>
+                <li><a href="#" onclick="alert('You have been logged out.'); window.open(' ./login.html', '_self')">Sign
+                        Out</a>
+                </li>
+            </ul>
+        </div>
+        <div class="rightcontainer">
+            <div class="bookscontainer">
+                <div class="book"><a href="./educationBooks/thecprogramming.html" class="book"><img
+                            src="./assets/images/CProgramming.jpg" class="bookcover" />
+                        The C Programming Language</a>
+                </div>
+                <div class="book"><a href="./educationBooks/htmlandcss.html" class="book"><img
+                            src="./assets/images/Html&CssS.jpg" class="bookcover" />
+                        Web Design with HTML, CSS, JavaScript
+                </div></a>
+                <div class="book"><a href="./educationBooks/penetrationtesting.html" class="book"><img
+                            src="./assets/images/PenetrationTestingS.jpg" class="bookcover" />
+                        Penetration Testing: A Hands-on Introduction</a></div>
+                <!-- <div class="book"><img src="./transcendenceS.jpg" class="bookcover" />
+                    Transcendence: My Spiritual Experiences with Pramukh Swamiji</div>
+                <div class="book"><img src="./transcendenceS.jpg" class="bookcover" />
+                    Transcendence: My Spiritual Experiences with Pramukh Swamiji</div> -->
+            </div>
+        </div>
+    </main>
+    <script src="./scripts/scripts.js"></script>
+</body>
+
+</html>
